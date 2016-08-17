@@ -56,8 +56,11 @@ shinyUI(fluidPage(
               alignCenter(
                       sliderInput("t", "time: t", 
                           min=1, max=15, value=1,  step=1, width = "60%", animate=animationOptions(loop=TRUE))
-                  )),
-              h6("click to start/stop animation",align = "center"),
+                  )
+                  
+              h6("click to start/stop animation",align = "center")    
+                  ),
+              
                   
               tabPanel("SIR Plots", 
                   splitLayout(cellWidths = c("50%", "50%"), 
