@@ -55,9 +55,9 @@ shinyUI(fluidPage(
                   
                   alignCenter(
                       sliderInput("t", "time", 
-                      min=1, max=15, value=1,  step=1, width = "200%", loop = TRUE,
-                      animate=TRUE)
+                          min=1, max=15, value=1,  step=1, width = "60%", animate=animationOptions(loop=TRUE))
                   )),
+                  
               tabPanel("SIR Plots", 
                   splitLayout(cellWidths = c("50%", "50%"), 
                       plotOutput("plot1"), plotOutput("plot2"))
