@@ -15,7 +15,7 @@ shinyUI(fluidPage(
         selectInput("network_type", 
             label = "network type", 
             choices = list("Scale Free", "Small World", "Binary Tree","Lattice"), 
-            selected = "Scale Free"),
+            selected = "Lattice"),
       
         numericInput("network_size", 
             label = "population size", 
