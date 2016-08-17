@@ -55,7 +55,7 @@ shinyUI(fluidPage(
                   
                   alignCenter(
                       sliderInput("t", "time", 
-                      min=1, max=15, value=1,  step=1,
+                      min=1, max=15, value=1,  step=1, width = "200%", loop = TRUE,
                       animate=TRUE)
                   )),
               tabPanel("SIR Plots", 
@@ -66,19 +66,6 @@ shinyUI(fluidPage(
               )
               
           )
-          # fluidRow(
-          #     sliderInput("t", "time", 
-          #         min=1, max=12, value=1,  step=1,
-          #         animate=TRUE),
-          #     plotOutput("plot3")
-          # 
-          # ),
-          # 
-          # fluidRow(
-          #     p("summary plots"),
-          #     splitLayout(cellWidths = c("50%", "50%"), 
-          #         plotOutput("plot1"), plotOutput("plot2"))
-          # ) 
          
       )
     
