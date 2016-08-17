@@ -50,8 +50,9 @@ shinyUI(fluidPage(
           tabsetPanel(
         
               tabPanel("Network Visualization", 
-                  h4(textOutput("text1"),align = "center"),
-                  plotOutput("plot3"),
+              h4(textOutput("text1"),align = "center"),
+                  
+              plotOutput("plot3"),
                   
               alignCenter(
                       sliderInput("t", "time: t", 
