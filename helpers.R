@@ -1,3 +1,8 @@
+# install packages if missing
+list.of.packages <- c("shiny","igraph", "reshape","ggplot2","reshape2")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
 library(igraph)
 library(reshape)
 library(ggplot2)
