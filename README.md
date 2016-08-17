@@ -1,6 +1,6 @@
 # A shiny app to simulate infectious disease in a network 
 
-This is a shiny app for visualizing the spread of SIR-like infectious disease in a network.
+This is a shiny app for visualizing the spread of SIR-like infectious disease in a network. You can customize the network and disease dynamic. 
 
 ## Screenshots
 
