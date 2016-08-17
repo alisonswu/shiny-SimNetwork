@@ -6,8 +6,8 @@ This is a shiny app for visualizing the spread of SIR-like infectious disease in
 
 
 <p align="center">
-  <img src="screenshot1.png" width="500"/>
-  <img src="screenshot2.png" width="500"/>
+  <img src="screenshot1.png" width="400"/>
+  <img src="screenshot2.png" width="400"/>
 </p>
 
 ## Usage
