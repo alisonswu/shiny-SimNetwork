@@ -1,11 +1,19 @@
+# A shiny app to simulate infectious disease in a network 
 
-## Screenshot
+This is a shiny app for visualizing the spread of SIR-like infectious disease in a network.
+
+## Screenshots
 
 ![alt tag](https://github.com/alisonswu/shiny-SimNetwork/blob/master/screenshot.png)
 
+<p align="center">
+  <img src="shiny-SimNetwork/screenshot1.png" width="350"/>
+  <img src="shiny-SimNetwork/screenshot2.png" width="350"/>
+</p>
 
 ## Usage
-This is a shiny app for visualizing the spread of infectious disease in a network. You will need Rstudio and internet connection to run the app.
+
+You will need Rstudio and internet connection to run the app.
 
 To launch the app, open Rstudio and run the following code. 
 
