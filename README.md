@@ -1,5 +1,5 @@
 
-## A Shiny App to Simulate Infectious Disease in a Network 
+## Screenshot
 
 ![alt tag](https://github.com/alisonswu/shiny-SimNetwork/blob/master/screenshot.png)
 
