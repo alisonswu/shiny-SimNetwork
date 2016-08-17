@@ -1,3 +1,9 @@
+#     Author : Alison Sihan Wu 
+#              Department of Statistics, North Carolina State University
+#      Email : swu11@ncsu.edu 
+#     GitHub : https://github.com/alisonswu/shiny-SimNetwork
+
+# ui.R
 library(shiny)
 
 alignCenter <- function(el) {
