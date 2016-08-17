@@ -12,9 +12,9 @@ This is a shiny app for visualizing the spread of SIR-like infectious disease in
 
 ## Usage
 
-You will need Rstudio and internet connection to run the app.
+You will need RStudio and internet connection to run the app. Click [here](https://www.rstudio.com/home/) to install RStudio.
 
-To launch the app, open Rstudio and run the following code. 
+To launch the app, open RStudio and run the following code. 
 
 ```R
 # install shiny package if not done
