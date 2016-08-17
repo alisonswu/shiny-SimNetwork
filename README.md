@@ -4,11 +4,10 @@ This is a shiny app for visualizing the spread of SIR-like infectious disease in
 
 ## Screenshots
 
-![alt tag](https://github.com/alisonswu/shiny-SimNetwork/blob/master/screenshot.png)
 
 <p align="center">
-  <img src="shiny-SimNetwork/screenshot1.png" width="350"/>
-  <img src="shiny-SimNetwork/screenshot2.png" width="350"/>
+  <img src="https://github.com/alisonswu/shiny-SimNetwork/screenshot1.png" width="350"/>
+  <img src="https://github.com/alisonswu/shiny-SimNetwork/screenshot2.png" width="350"/>
 </p>
 
 ## Usage
