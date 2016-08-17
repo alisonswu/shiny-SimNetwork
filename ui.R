@@ -20,7 +20,7 @@ shinyUI(fluidPage(
         numericInput("network_size", 
             label = "population size", 
             min = 2, max = 100, step = 5,
-            value = 20),
+            value = 100),
         
         br(),
 
@@ -29,7 +29,7 @@ shinyUI(fluidPage(
         numericInput("init_infected", 
             label = "number of initial infections", 
             min = 0, max = 100, step = 1, 
-            value = 2),
+            value = 5),
     
         sliderInput("infection_prob", 
             label = "infection probability",
@@ -38,7 +38,7 @@ shinyUI(fluidPage(
         selectInput("infection_period", 
             label = "infection duration", 
             choices = list(1,2,3,4), 
-            selected = 2),
+            selected = 3),
         
         br(),
         
