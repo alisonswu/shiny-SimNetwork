@@ -5,7 +5,7 @@ To use the app:
 1. Download ui.R, server.R, helpers.R to a local folder called SimNetwork.
 2. Open Rstudio and set working directory to the parent directory of SimNetwork in:  
       Session - set working directory - choose directory.
-3. Install required packages by runing the following R code. 
+3. Install required packages by running the following R code. 
       install.packages("shiny")
       install.packages("reshape")
       install.packages("reshape2")
