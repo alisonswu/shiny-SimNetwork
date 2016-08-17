@@ -1,3 +1,9 @@
+#     Author : Alison Sihan Wu 
+#              Department of Statistics, North Carolina State University
+#      Email : swu11@ncsu.edu 
+#     GitHub : https://github.com/alisonswu/shiny-SimNetwork
+
+
 # install packages if missing
 list.of.packages <- c("shiny","igraph", "reshape","ggplot2","reshape2")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
