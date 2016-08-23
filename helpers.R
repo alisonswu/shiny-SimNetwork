@@ -96,7 +96,7 @@ plot_summary1 <- function(sim){
     SIR_df$t = 1:length(sim[[2]])
     SIR_long = melt(SIR_df, id = "t")
     SIR_long$status = factor(SIR_long$variable,levels = c('S','I','R'))
-    SIR_long$value = SIR_long$value*100/nrow(SIR_long)
+    SIR_long$value = SIR_long$value*100/length(sim[[2]][[1]])
     
     # line 
     ggplot(data = SIR_long,aes(x=t,y=value,colour=status),alpha= 0.7)+
@@ -117,7 +117,7 @@ plot_summary2 <- function(sim){
     SIR_df$t = 1:length(sim[[2]])
     SIR_long = melt(SIR_df, id = "t")
     SIR_long$status = factor(SIR_long$variable,levels = c('S','I','R'))
-    SIR_long$value = SIR_long$value*100/nrow(SIR_long)
+    SIR_long$value = SIR_long$value*100/length(sim[[2]][[1]])
     
     # line 
     ggplot(SIR_long,aes(x=t,y=value))+
