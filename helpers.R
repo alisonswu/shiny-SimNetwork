@@ -96,12 +96,13 @@ plot_summary1 <- function(sim){
     SIR_df$t = 1:length(sim[[2]])
     SIR_long = melt(SIR_df, id = "t")
     SIR_long$status = factor(SIR_long$variable,levels = c('S','I','R'))
+    SIR_long$value = SIR_long$value*100/nrow(SIR_long)
     
     # line 
     ggplot(data = SIR_long,aes(x=t,y=value,colour=status),alpha= 0.7)+
         geom_line(size = 1)+geom_point()+
         scale_x_continuous(name = "t", breaks =1:nrow(SIR_df))+
-        ylab('population')+
+        ylab('% population')+
         scale_color_manual(values=c("chartreuse3","indianred1","gold"))+
         theme_bw() 
     
@@ -116,6 +117,7 @@ plot_summary2 <- function(sim){
     SIR_df$t = 1:length(sim[[2]])
     SIR_long = melt(SIR_df, id = "t")
     SIR_long$status = factor(SIR_long$variable,levels = c('S','I','R'))
+    SIR_long$value = SIR_long$value*100/nrow(SIR_long)
     
     # line 
     ggplot(SIR_long,aes(x=t,y=value))+
@@ -123,7 +125,7 @@ plot_summary2 <- function(sim){
         scale_fill_manual(values = c("chartreuse3","indianred1","gold"))+
         scale_color_manual(values=c("chartreuse3","indianred1","gold"))+
         scale_x_continuous(name = "t", breaks = 1:nrow(SIR_df))+
-        ylab('population')+
+        ylab('% population')+
         theme_bw()
     
 }
