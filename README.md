@@ -19,10 +19,37 @@ You will need RStudio and internet connection to run the app. Click [here](https
 To launch the app, open RStudio and run the following code. 
 
 ```R
-# install shiny package if not done
-# install.packages("shiny")
+# install shiny package if not found
+if(!"shiny" %in% installed.packages()){install.packages("shiny")}
 
 library(shiny)
-
 runGitHub("shiny-SimNetwork","alisonswu")
+```
+
+## Documentation
+We use the [R igraph](http://igraph.org/r/) package to generate a graph representation of network. Each vertex of the graph represents an individual in the network, and the edge between two vertices represents physical contact between the individuals. 
+
+<p align="center">
+  <img src="graph.png" width="200", "An example of tree network"/>
+</p>
+
+We use an agent-based model to simulate an SIR-like infectious disease over discrete time points t = 1,...,15. <br />
+The inividuals in the network can have one of the three statuses: S(susceptible), I(infected), R(recovered). <br />
+At t = 1, <br />
+- the network is initiated with a small subset of infected individuals, while the remaining individuals are susceptible. 
+
+
+At t = 2,3,... <br />
+- A suscpetible individual becomes infected with probability 1 - (1-p)^c, where p is probability of an infected individual passing infection to a susceptible individual through edge connection over 1 time period, and c is the number of infected neighbors with edge connection. <br />
+- An infected individual becomes recovered after the infection duration.<br />
+- A recovered individual remains recovered.  
+
+
+
+
+
+
+
+
+
 

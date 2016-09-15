@@ -17,7 +17,7 @@ shinyUI(fluidPage(
   
   sidebarLayout(
     sidebarPanel(width = 3,
-        h4("Step 1: Network Setup"), 
+        h5("Step 1: Choose Network", style = "color:#0099cc"), 
         selectInput("network_type", 
             label = "network type", 
             choices = list("Scale Free", "Small World", "Binary Tree","Lattice"), 
@@ -31,7 +31,7 @@ shinyUI(fluidPage(
         br(),
 
       
-        h4("Step 2: Disease Dynamic"),  
+        h5("Step 2: Choose Disease Dynamic", style = "color: #0099cc"),  
         numericInput("init_infected", 
             label = "number of initial infections", 
             min = 0, max = 100, step = 1, 
@@ -48,25 +48,27 @@ shinyUI(fluidPage(
         
         br(),
         
-        h4("Step 3: Click Button to Simulate"),
+        h5("Step 3: Click Button to Simulate",style = "color:#0099cc"),
         actionButton("go", "simulate")
     ),
      
-      mainPanel("",
+      mainPanel(width = 9,
           tabsetPanel(
         
               tabPanel("Network Visualization", 
               h4(textOutput("text1"),align = "center"),
                   
-              plotOutput("plot3"),
+              plotOutput("plot3", width = "100%"),
                   
               alignCenter(
                       sliderInput("t", "time: t", 
                           min=1, max=15, value=1,  step=1, width = "60%", animate=animationOptions(loop=TRUE))
                   ),
+              
                   
-              h6("click to start/stop animation",align = "right")    
-                  ),
+              h5("Step 4: Click to start/pause animation",
+                  align = "right", style = "color:#0099cc")
+              ), 
               
                   
               tabPanel("SIR Plots", 

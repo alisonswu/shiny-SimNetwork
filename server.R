@@ -33,7 +33,7 @@ shinyServer(function(input, output) {
     
     output$plot3<- renderPlot({
         plot_network(sim(), input$t)
-    })
+    },height = 480, width = 800)
     
     output$text1 <- renderText({ 
         paste(input$network_type, "Network at t =", input$t)
