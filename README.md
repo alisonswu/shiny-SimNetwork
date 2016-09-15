@@ -34,12 +34,11 @@ We use the [R igraph](http://igraph.org/r/) package to generate a graph represen
   <img src="graph.png" width="200", "An example of tree network"/>
 </p>
 
-We use an agent-based model to simulate an SIR-like infectious disease over discrete time points (t). The inividuals in the network can have one of the three status: S(susceptible), I(infected), R(recovered). 
-At t = 1, initiate the network with a small subset of infected individuals, while the remaining are susceptible.
-At t = 2,3,... 
-A suscpetible individual becomes infected with probability
-
-An infected individual become recovered after staying infected over the infection duration.
+We use an agent-based model to simulate an SIR-like infectious disease over discrete time points t = 1,...,15. The inividuals in the network can have one of the three status: S(susceptible), I(infected), R(recovered). <br />
+At t = 1, the network is initiated with a small subset of infected individuals, while the remaining individuals are susceptible. <br />
+At t = 2,3,..., <br />
+A suscpetible individual becomes infected with probability. <br />
+An infected individual become recovered after staying infected over the infection duration.<br />
 A recovered individual remains recovered.  
 
 
