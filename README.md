@@ -31,7 +31,7 @@ runGitHub("shiny-SimNetwork","alisonswu")
 We use the [R igraph](http://igraph.org/r/) package to generate a graph representation of network. Each vertex of the graph represents an individual in the network, and the edge between two vertices represents physical contact between the individuals. 
 
 <p align="center">
-  <img src="graph.png" width="400"/>
+  <img src="graph.png" width="200"/>
 </p>
 
 We use an agent-based model to simulate an SIR-like infectious disease over discrete time points (t). The inividuals in the network can have one of the three status: S(susceptible), I(infected), R(recovered). 
