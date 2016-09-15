@@ -19,11 +19,10 @@ You will need RStudio and internet connection to run the app. Click [here](https
 To launch the app, open RStudio and run the following code. 
 
 ```R
-# install shiny package if not done
-# install.packages("shiny")
+# install shiny package if not found
+if(!"shiny" %in% installed.packages()){install.packages("shiny")}
 
 library(shiny)
-
 runGitHub("shiny-SimNetwork","alisonswu")
 ```
 
