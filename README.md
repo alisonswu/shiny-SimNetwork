@@ -36,7 +36,9 @@ We use the [R igraph](http://igraph.org/r/) package to generate a graph represen
 
 We use an agent-based model to simulate an SIR-like infectious disease over discrete time points t = 1,...,15. The inividuals in the network can have one of the three statuses: S(susceptible), I(infected), R(recovered). <br />
 At t = 1, <br />
-- the network is initiated with a small subset of infected individuals, while the remaining individuals are susceptible. <br />
+- the network is initiated with a small subset of infected individuals, while the remaining individuals are susceptible. 
+
+
 At t = 2,3,... <br />
 - A suscpetible individual becomes infected with probability 1 - (1-p)^c, where p is the infection probability between an infected individual passes infection to a susceptible individual through edge connection over 1 time period, and c is the number of infected neighbors with edge 1 connection). <br />
 - An infected individual become recovered after staying infected over the infection duration.<br />
