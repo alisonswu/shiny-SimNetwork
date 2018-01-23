@@ -1,11 +1,11 @@
-# A shiny app to simulate infectious disease in a network 
+# A shiny app to simulate infectious disease in networks 
 
-This is a shiny app for visualizing the spread of SIR-like infectious disease in a network. 
+This Shiny app is for simulating and visualizing the spread of SIR-like infectious disease in networks. 
 
-The app allows you to customize the network and disease dynamic. The underlying algorithm uses an agent based model to simulate the disease progression. The app displays an animation of disease progression in the network, and summary plots of the S-I-R compartment size over time. 
+The app allows you to select different types of network structure and set the parameters to control the disease dynamic. The underlying algorithm uses an agent based model to simulate the disease progression. The app displays an animation of disease progression in the network, and summary plots of the S-I-R compartment size over time. 
 
 ## Screenshots
-
+Here are screenshots of the app. 
 
 <p align="center">
   <img src="screenshot1.png" width="700"/>
@@ -33,16 +33,18 @@ We use the [R igraph](http://igraph.org/r/) package to generate a graph represen
   <img src="graph.png" width="200", "An example of tree network"/>
 </p>
 
-We use an agent-based model to simulate an SIR-like infectious disease over discrete time points t = 1,...,15. <br />
-The inividuals in the network can have one of the three statuses: S(susceptible), I(infected), R(recovered). <br />
-At t = 1, <br />
+We use an agent-based model to simulate an SIR-like infectious disease over discrete time points ![equation](http://latex.codecogs.com/gif.latex?t%20%3D1%2C%20%5Chdots%2C%2015).
+
+
+The inividuals in the network can have one of the three statuses: susceptible (S), infected (I), recovered (R). <br />
+At ![equation](http://latex.codecogs.com/gif.latex?t%20%3D1), <br />
 - the network is initiated with a small subset of infected individuals, while the remaining individuals are susceptible. 
 
 
-At t = 2,3,... <br />
-- A suscpetible individual becomes infected with probability 1 - (1-p)^c, where p is probability of an infected individual passing infection to a susceptible individual through edge connection over 1 time period, and c is the number of infected neighbors with edge connection. <br />
-- An infected individual becomes recovered after the infection duration.<br />
-- A recovered individual remains recovered.  
+At ![equation](http://latex.codecogs.com/gif.latex?t%20%3D2%2C%5Cdots), <br />
+- a suscpetible individual becomes infected with probability ![equation](http://latex.codecogs.com/gif.latex?1%20-%20%281-p%29%5Ec), where ![equation](http://latex.codecogs.com/gif.latex?p) is probability of an infected individual passing infection to a susceptible individual through edge connection over 1 time period, and ![equation](http://latex.codecogs.com/gif.latex?c) is the number of infected neighbors with edge connection; <br />
+- an infected individual becomes recovered after the infection duration;<br />
+- a recovered individual remains recovered.  
 
 
 
