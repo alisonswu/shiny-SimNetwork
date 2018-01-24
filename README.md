@@ -4,16 +4,7 @@ This Shiny app is for simulating and visualizing the spread of SIR-like infectio
 
 The app allows you to select different types of network structure and set the parameters to control the disease dynamic. The underlying algorithm uses an agent based model to simulate the disease progression. The app displays an animation of disease progression in the network, and summary plots of the S-I-R compartment size over time. 
 
-## Screenshots
-Here are screenshots of the app. 
-
-<p align="center">
-  <img src="screenshot1.png" width="700"/>
-  <img src="screenshot2.png" width="700"/>
-</p>
-
 ## Usage
-
 You will need RStudio and internet connection to run the app. Click [here](https://www.rstudio.com/home/) to install RStudio.
 
 To launch the app, open RStudio and run the following code. 
@@ -25,6 +16,14 @@ if(!"shiny" %in% installed.packages()){install.packages("shiny")}
 library(shiny)
 runGitHub("shiny-SimNetwork","alisonswu")
 ```
+## Screenshots
+Here are example screenshots of the app. 
+
+<p align="center">
+  <img src="screenshot1.png" width="700"/>
+  <img src="screenshot2.png" width="700"/>
+</p>
+
 
 ## Documentation
 We use the [R igraph](http://igraph.org/r/) package to generate a graph representation of network. Each vertex of the graph represents an individual in the network, and the edge between two vertices represents physical contact between the individuals. 
